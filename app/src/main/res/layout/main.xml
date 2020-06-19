@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<ScrollView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+		<RelativeLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:paddingRight="10dp"
+			android:paddingLeft="25dp"
+			android:paddingBottom="35dp"
+			android:orientation="vertical"
+			android:background="#FFFEFF">
+
+			<TextView
+				android:text="BMI Calculator"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:typeface="normal"
+				android:textSize="24sp"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="60dp"
+				android:id="@+id/mainTextView1"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Enter your weight (kg):"
+				android:layout_below="@id/mainTextView1"
+				android:layout_marginTop="90dp"
+				android:typeface="normal"
+				android:textStyle="bold"
+				android:id="@+id/mainTextView2"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Enter your height (m):"
+				android:layout_below="@id/mainTextView2"
+				android:layout_marginTop="35dp"
+				android:typeface="normal"
+				android:textStyle="bold"
+				android:id="@+id/mainTextView3"/>
+
+			<EditText
+				android:inputType="numberDecimal"
+				android:layout_width="wrap_content"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/mainTextView1"
+				android:layout_marginLeft="150dp"
+				android:layout_marginTop="75dp"
+				android:text="80"
+				android:id="@+id/weightInput"
+				android:textSize="20sp"
+				android:textAlignment="center"
+				android:gravity="center"
+				android:hint="Your Weight"/>
+
+			<EditText
+				android:inputType="numberDecimal"
+				android:layout_width="wrap_content"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/mainTextView2"
+				android:layout_marginLeft="150dp"
+				android:layout_marginTop="20dp"
+				android:text="1.80"
+				android:textSize="20sp"
+				android:textAlignment="center"
+				android:gravity="center"
+				android:id="@+id/heightInput"
+				android:hint="Your Height"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Your BMI:"
+				android:layout_below="@id/mainTextView3"
+				android:layout_marginTop="195dp"
+				android:typeface="normal"
+				android:textStyle="bold"
+				android:layout_marginLeft="40dp"
+				android:id="@+id/mainTextView4"/>
+
+			<TextView
+				android:inputType="numberDecimal"
+				android:layout_width="300dp"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/mainTextView3"
+				android:layout_marginTop="192dp"
+				android:layout_marginLeft="110dp"
+				android:text=".............."
+				android:textAlignment="center"
+				android:textSize="20sp"
+				android:gravity="center"
+				android:background="#FFFFFF"
+				android:id="@+id/BMIResult"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="CALCULATE MY BMI"
+				android:layout_below="@id/mainTextView3"
+				android:layout_marginTop="45dp"
+				android:layout_marginLeft="80dp"
+				android:id="@+id/buttonCalculateBMI"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="BMI Category Appears Here."
+				android:layout_below="@id/mainTextView4"
+				android:layout_marginTop="55dp"
+				android:layout_centerHorizontal="true"
+				android:typeface="normal"
+				android:textStyle="bold"
+				android:textSize="17sp"
+				android:id="@+id/BMICategory"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="What's Your Name?"
+				android:layout_below="@id/mainTextView1"
+				android:layout_marginTop="35dp"
+				android:typeface="normal"
+				android:textStyle="bold"/>
+
+			<EditText
+				android:inputType="textPersonName"
+				android:layout_width="wrap_content"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/mainTextView1"
+				android:layout_marginLeft="150dp"
+				android:layout_marginTop="20dp"
+				android:gravity="center"
+				android:text="John Doe"
+				android:textSize="20sp"
+				android:id="@+id/nameInput"
+				android:hint="Your Full Name"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="168dp"
+				android:text="RESET"
+				android:layout_below="@id/buttonCalculateBMI"
+				android:layout_marginLeft="80dp"
+				android:layout_marginTop="15dp"
+				android:id="@+id/reset"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:text="User Review"
+				android:layout_below="@id/BMICategory"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="70dp"
+				android:textColor="#000000"
+				android:gravity="center"
+				android:textSize="30sp"
+				android:id="@+id/txtUserReview"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_below="@id/txtUserReview"
+				android:layout_marginTop="35dp"
+				android:text="Name:"
+				android:textSize="20sp"
+				android:textColor="#000000"
+				android:textStyle="bold"
+				android:paddingLeft="20dp"
+				android:id="@+id/txtName"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="TALABI AYOMIDE"
+				android:layout_below="@id/txtUserReview"
+				android:layout_marginTop="37dp"
+				android:layout_marginLeft="130dp"
+				android:textSize="20sp"
+				android:textColor="#000000"
+				android:paddingLeft="45dp"
+				android:id="@+id/txtFLName"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Weight:"
+				android:layout_below="@id/txtName"
+				android:layout_marginTop="30dp"
+				android:textSize="20sp"
+				android:paddingLeft="20dp"
+				android:textStyle="bold"
+				android:textColor="#000000"
+				android:id="@+id/txtYourWeight"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="80Kg"
+				android:layout_below="@id/txtName"
+				android:layout_marginLeft="130dp"
+				android:layout_marginTop="30dp"
+				android:textColor="#000000"
+				android:textSize="20sp"
+				android:paddingLeft="45dp"
+				android:id="@+id/txtWeight"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Height:"
+				android:layout_below="@id/txtName"
+				android:layout_marginTop="75dp"
+				android:textSize="20sp"
+				android:paddingLeft="20dp"
+				android:textStyle="bold"
+				android:textColor="#000000"
+				android:id="@+id/txtYourHeight"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="1.80m"
+				android:layout_below="@id/txtName"
+				android:layout_marginLeft="130dp"
+				android:layout_marginTop="75dp"
+				android:textColor="#000000"
+				android:textSize="20sp"
+				android:paddingLeft="45dp"
+				android:id="@+id/txtHeight"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="BMI:"
+				android:layout_below="@id/txtName"
+				android:layout_marginTop="125dp"
+				android:textSize="20sp"
+				android:paddingLeft="20dp"
+				android:textStyle="bold"
+				android:textColor="#000000"
+				android:id="@+id/txtYourBMI"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="12.6"
+				android:layout_below="@id/txtName"
+				android:layout_marginLeft="130dp"
+				android:layout_marginTop="125dp"
+				android:textColor="#000000"
+				android:textSize="20sp"
+				android:paddingLeft="45dp"
+				android:id="@+id/txtBMI"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="BMI Category:"
+				android:layout_below="@id/txtName"
+				android:layout_marginTop="175dp"
+				android:textSize="20sp"
+				android:paddingLeft="20dp"
+				android:textStyle="bold"
+				android:textColor="#000000"
+				android:id="@+id/txtYourBMICategory"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:text="Obese Class 3 = Very Severely Obsese"
+				android:layout_below="@id/txtName"
+				android:layout_marginLeft="130dp"
+				android:layout_marginTop="175dp"
+				android:textColor="#000000"
+				android:textSize="20sp"
+				android:paddingLeft="45dp"
+				android:id="@+id/txtBMICategory"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="©2020 D E V O L A W A L E"
+				android:layout_below="@id/txtBMICategory"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="100dp"
+				android:textSize="11sp"
+				android:textStyle="bold"
+				android:textColor="#220081"/>
+
+		</RelativeLayout>
+
+	</ScrollView>
+
+</RelativeLayout>
+
